@@ -1,4 +1,4 @@
-import TdClient from 'tdweb/dist/tdweb';
+import TdClient, {TdOptions} from 'tdweb';
 import options from '../options';
 
 export default class Tg {
@@ -8,7 +8,7 @@ export default class Tg {
 
   constructor() {
     options.onUpdate = update => this.onUpdate(update);
-    this.client = new TdClient(options);
+    this.client = new TdClient(options as TdOptions);
   }
 
   onUpdate(update): void {

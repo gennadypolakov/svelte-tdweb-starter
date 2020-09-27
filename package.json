@@ -26,6 +26,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
+    "@types/tdweb": "^1.4.1",
     "sirv-cli": "^1.0.0"
   }
 }
